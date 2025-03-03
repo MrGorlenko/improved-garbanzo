@@ -1,0 +1,56 @@
+.flex .cell {
+	/* width: 50px; */
+	flex-basis: 50px;
+	height: 50px;
+
+	background-color: aqua;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex .container {
+	/* width: 211px; */
+	width: 100%;
+	height: 611px;
+	display: flex;
+
+	/* flex-direction: row;
+	flex-wrap: wrap-reverse; */
+
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	/* gap: 3px; */
+	row-gap: 10px;
+	column-gap: 5px;
+}
+
+/* .flex .one {
+	order: 2;
+}
+
+.flex .two {
+	order: 1;
+}
+
+.flex .three {
+	order: 0;
+}
+
+.flex .four {
+	order: 4;
+}
+
+.flex .five {
+	order: 5;
+}
+
+.flex .six {
+	order: 6;
+} */
+
+.flex .cell:last-child {
+	background-color: brown;
+}

@@ -1,0 +1,14 @@
+.statistics .container {
+	display: flex;
+	justify-content: center;
+	gap: 112px;
+}
+
+.statistics h2,
+.statistics h3 {
+	text-align: left;
+}
+
+.statistics h3 {
+	width: 710px;
+}

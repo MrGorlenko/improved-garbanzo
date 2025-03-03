@@ -1,0 +1,76 @@
+.section-1 > p {
+	color: red;
+}
+
+.div-22 > p {
+	color: blue;
+}
+
+.div-22 + p {
+	color: pink;
+}
+
+[type="text"] {
+	width: 100px;
+	background-color: yellow;
+	color: #000;
+}
+
+[type="number"] {
+	width: 30px;
+	background-color: green;
+	color: #fff;
+}
+
+/* [href^="https"] {
+	color: paleturquoise;
+} */
+
+[href^="https"]:visited {
+	color: red;
+}
+
+[href^="https"]:link {
+	color: green;
+}
+
+.div-22::after {
+	color: green;
+	background-color: black;
+	width: 50px;
+	height: 50px;
+	display: block;
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0;
+}
+
+.div-22 p {
+	color: violet;
+	/* font-size: 50px; */
+}
+
+.text-input:focus {
+	width: 150px;
+}
+
+.div-22 p:first-child {
+	color: rgb(52, 75, 75);
+}
+
+.div-22 p:nth-child(4n) {
+	color: rgb(66, 225, 17);
+}
+
+.div-22 p:last-child {
+	color: rgb(216, 17, 120);
+}
+
+.abc p:only-child {
+	/* font-size: 35px; */
+}
+
+p {
+	color: tomato;
+}

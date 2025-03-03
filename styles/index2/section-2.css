@@ -1,0 +1,20 @@
+[chocolate] {
+	font-size: 34px;
+	color: green;
+}
+
+[class|="div"] {
+	height: 100vh;
+}
+
+.par-par {
+	color: violet;
+}
+
+.par-par:hover {
+	color: aqua;
+}
+
+.par-par:active {
+	color: red;
+}

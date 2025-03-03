@@ -1,0 +1,34 @@
+.hero .subtitle,
+.hero .title,
+.hero p {
+	text-align: center;
+	color: #fff;
+}
+
+.hero p {
+	line-height: 2;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+
+	text-align: justify;
+}
+
+.hero p img {
+	vertical-align: middle;
+}
+
+.hero .card {
+	width: 150px;
+	height: 250px;
+	margin: auto;
+	background-color: aliceblue;
+	border-radius: 8px;
+	border: 2px solid black;
+}
+
+.hero .card h5 {
+	width: 150px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

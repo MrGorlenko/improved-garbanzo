@@ -1,0 +1,36 @@
+.how-does-it-work {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.how-does-it-work .container {
+	display: flex;
+	justify-content: center;
+	gap: 23.5px;
+}
+
+.how-does-it-work .step {
+	flex-basis: 312px;
+	height: 200px;
+	background-image: url("../../image/step-bg.png");
+	color: #fff;
+	padding: 24px;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.how-does-it-work .step h4 {
+	margin-top: 0;
+	display: flex;
+	gap: 10px;
+	line-height: 1.4;
+}
+
+.how-does-it-work .step p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
