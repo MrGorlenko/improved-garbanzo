@@ -1,0 +1,119 @@
+@import url("styles/basics/header.css");
+@import url("styles/index/hero.css");
+@import url("styles/index/ratings.css");
+@import url("styles/index/how-it-works.css");
+@import url("styles/index/statistics.css");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	font-family: Anybody;
+}
+
+:root {
+	--base-gray: #293241;
+	/* --font-size: 16px; */
+	--font-size2: 300px;
+}
+
+body {
+	/* margin: 0; */
+}
+
+section {
+	height: 100vh;
+	/* --font-size: 100%; */
+	/* width: var(--font-size, 600px); */
+}
+
+.top-section {
+	width: 100%;
+	box-sizing: border-box;
+	background-image: url("image/section-1-bg.png");
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2%;
+}
+
+nav {
+	display: inline-block;
+}
+/* 
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	gap: 10px;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+} */
+
+.start-trial-button,
+.promo-button {
+	width: 221px;
+	height: 52px;
+	background-color: #fff;
+	color: var(--base-gray);
+	border-radius: 15px;
+}
+
+/* .promo-button {
+	width: 221px;
+	height: 52px;
+	background-color: #fff;
+	color: #293241;
+	border-radius: 15px;
+} */
+
+/* #start-trial-button {
+	width: 221px;
+	height: 52px;
+	background-color: #fff;
+	color: #293241;
+	border-radius: 15px;
+} */
+
+/* header button {
+	width: 221px;
+	height: 52px;
+	background-color: #fff;
+	color: #293241;
+	border-radius: 15px;
+} */
+
+.pricing {
+	padding-top: 150px;
+}
+
+h2 {
+	font-size: 48px;
+	text-align: center;
+	color: #293241;
+}
+
+h3 {
+	text-align: center;
+	color: #7f848d;
+	font-size: 24px;
+}
+
+.pricing-articles-wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
+
+/* .pricing h2 {
+	
+
+} */
