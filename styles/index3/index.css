@@ -1,0 +1,18 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("hero.css");
+@import url("header.css");
+@import url("about-us.css");
+
+* {
+	font-family: "Plus Jakarta Sans";
+}
+
+.container {
+	width: 95%;
+	margin: auto;
+}
+
+section {
+	height: 100vh;
+}
