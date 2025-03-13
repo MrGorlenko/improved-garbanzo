@@ -3,6 +3,13 @@
 @import url("hero.css");
 @import url("header.css");
 @import url("about-us.css");
+@import url("roadmap.css");
+@import url("big-label-wrapper.css");
+
+@font-face {
+	font-family: "heliosextc";
+	src: url("../../fonts/heliosextc.otf");
+}
 
 * {
 	font-family: "Plus Jakarta Sans";

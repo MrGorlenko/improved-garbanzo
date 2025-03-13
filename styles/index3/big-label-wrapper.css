@@ -1,0 +1,11 @@
+.big-label-wrapper {
+	background-color: black;
+}
+.big-label-wrapper h2 {
+	font-size: 200px;
+	text-wrap: nowrap;
+	transform: rotate(-10deg);
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #fff;
+}
