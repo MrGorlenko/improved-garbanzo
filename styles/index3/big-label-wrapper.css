@@ -1,3 +1,81 @@
+@keyframes pulsingHeader {
+	from {
+		font-size: 200px;
+		color: #fff;
+	}
+
+	to {
+		font-size: 50px;
+		color: blueviolet;
+	}
+}
+
+@keyframes text-in-square {
+	from {
+		transform: scale(0.1);
+		color: #fff;
+	}
+
+	50% {
+		color: #cda7a7;
+	}
+
+	to {
+		transform: scale(1.5);
+		color: #2f21c7;
+	}
+}
+
+@keyframes circle-movement {
+	/* from {
+		transform: translate(0, 0);
+	}
+
+	to {
+	} */
+	0% {
+		transform: translate(0, 0);
+	}
+
+	25% {
+		transform: translate(200px, 0);
+	}
+
+	50% {
+		transform: translate(200px, 200px);
+	}
+
+	75% {
+		transform: translate(0%, 200px);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes circle-to-square {
+	from {
+		/* Начальное состояние */
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		background-color: #ff0000; /* Красный */
+	}
+	50% {
+		width: 50px;
+		height: 200px;
+		background-color: #7d0404;
+	}
+	to {
+		/* Конечное состояние */
+		width: 200px;
+		height: 200px;
+		border-radius: 0;
+		background-color: #280101; /* Синий */
+	}
+}
+
 .big-label-wrapper {
 	background-color: black;
 }
@@ -8,4 +86,36 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #fff;
+	/* animation: pulsingHeader 10s infinite alternate ease-in-out; */
+	/* animation-name: pulsingHeader;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out; */
+	/* animation-timing-function: steps(5, end); */
+}
+
+.big-label-wrapper h2:hover {
+	/* animation-name: none; */
+	animation-play-state: paused;
+}
+
+.blue-box {
+	width: 50px;
+	height: 50px;
+	background-color: #ff0000;
+	border-radius: 50%;
+	/* animation-name: circle-to-square;
+	animation-duration: 5s;
+	animation-delay: -2.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; */
+	/* animation: circle-to-square 5s infinite alternate ease-in-out,
+		circle-movement 5s infinite alternate ease-in-out; */
+	animation: circle-movement 5s infinite alternate
+		cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.blue-box:hover {
+	animation-play-state: paused;
 }

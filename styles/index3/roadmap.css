@@ -117,3 +117,52 @@
 	background-color: rgb(121, 20, 255);
 	/* box-shadow: 0px 0px 17px #c344ff; */
 }
+
+@keyframes button-bottom-line-anim {
+	0% {
+		height: 0%;
+		/* background-color: #7a42f4; */
+	}
+
+	100% {
+		height: 100%;
+	}
+}
+
+.roadmap button {
+	position: relative;
+	background-color: transparent;
+	border: 0;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.roadmap button span {
+	position: relative;
+	z-index: 1;
+}
+
+.roadmap button::after {
+	position: absolute;
+	display: block;
+	content: "";
+	background-color: #7a42f4;
+	width: 100%;
+
+	animation-name: none;
+	animation-duration: 0.5s;
+	/* animation-iteration-count: infinite; */
+	/* animation-iteration-count: infinite; */
+	/* animation-play-state: paused; */
+	/* animation-direction: reverse; */
+	animation-fill-mode: forwards;
+	transform: rotate(180deg);
+	transform-origin: top center;
+	/* animation-direction: reverse; */
+}
+
+.roadmap button:hover::after {
+	animation-name: button-bottom-line-anim;
+	/* animation-play-state: running; */
+}
