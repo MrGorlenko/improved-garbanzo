@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	background-color: red;
+}
+.wide {
+	width: 50%;
+	background-color: aquamarine;
+	font-size: 35px;
+}
+.narrow {
+	width: 20%;
+	background-color: aquamarine;
+}
+
+.mobile-img,
+.tablet-img {
+	display: none;
+}
+
+@media (max-width: 992px) {
+	.wide {
+		width: 75%;
+	}
+
+	.narrow {
+		width: 40%;
+	}
+
+	.tablet-img {
+		display: block;
+	}
+
+	.mobile-img,
+	.desktop-img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.wide {
+		width: 100%;
+	}
+
+	.narrow {
+		width: 50%;
+	}
+
+	.mobile-img {
+		display: block;
+	}
+
+	.tablet-img,
+	.desktop-img {
+		display: none;
+	}
+}
+
+/* @media (max-width: 768px) {
+	.wide {
+		width: 100%;
+	}
+
+	.narrow {
+		width: 50%;
+	}
+} */
+
+/* @media (orientation: landscape) {
+	.wide,
+	.narrow {
+		color: rgb(37, 213, 24);
+	}
+} */
+
+/* @media (orientation: portrait) {
+	.wide,
+	.narrow {
+		color: rgb(30, 24, 140);
+	}
+}
+
+@media (orientation: landscape), (min-width: 960px) {
+	.wide,
+	.narrow {
+		color: rgb(37, 213, 24);
+	}
+} */
+
+.wide-child {
+	width: 75%;
+	background-color: rgb(191, 0, 255);
+}
+
+/* @media (display-mode: fullscreen) {
+	.wide {
+		transform: rotate(10deg);
+	}
+} */
+
+.my-sutom-svg:hover stop {
+	stop-color: red;
+}
+
+.my-sutom-svg:hover path {
+	fill: black;
+}
+
+h1 {
+	/* font-size: 35px; */
+	/* font-size: 10vw; */
+	/* font-size: 6vmin; */
+}
